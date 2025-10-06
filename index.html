@@ -1,69 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blanca & Mitch</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#fdfdfd; color:#222; }
-    header { background:#111; color:#fff; padding:20px; display:flex; align-items:center; justify-content:space-between; }
-    header img { height:40px; }
-    nav a { color:#fff; margin-left:20px; text-decoration:none; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
-    .hero { text-align:center; padding:60px 20px; background:linear-gradient(135deg,#c18d7a,#f3c6b6); color:#111; }
-    .hero h1 { font-size:2.5em; margin-bottom:10px; }
-    .hero p { font-size:1.2em; }
-    section { padding:40px 20px; max-width:900px; margin:auto; }
-    h2 { margin-bottom:15px; }
-    .card { background:#fff; border:1px solid #ddd; padding:20px; margin:10px 0; border-radius:8px; }
-    footer { background:#111; color:#fff; text-align:center; padding:15px; font-size:14px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blanca & Mitch Salon</title>
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Swiper CSS for gallery slider -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+<!-- Custom styles -->
+<style>
+  body { font-family: 'Helvetica', sans-serif; }
+  .text-gold { color: #FFD700; }
+  .text-rose { color: #FF007F; }
+</style>
 </head>
-<body>
+<body class="bg-black text-white">
 
-  <header>
-    <!-- Fake logo as text (you can replace with an image later) -->
-    <div style="font-weight:bold; font-size:18px;">🌸 Blanca & Mitch</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#appointments">Appointments</a>
-      <a href="#tasks">Tasks</a>
-    </nav>
-  </header>
+<!-- Navbar -->
+<nav class="fixed w-full bg-black bg-opacity-80 backdrop-blur-sm z-50 p-4 flex justify-between items-center">
+  <div class="text-2xl font-bold text-rose">Blanca & Mitch</div>
+  <ul class="flex space-x-6">
+    <li><a href="#home" class="hover:text-gold">Home</a></li>
+    <li><a href="#services" class="hover:text-gold">Services</a></li>
+    <li><a href="#gallery" class="hover:text-gold">Gallery</a></li>
+    <li><a href="#about" class="hover:text-gold">About</a></li>
+    <li><a href="#contact" class="hover:text-gold">Contact</a></li>
+  </ul>
+</nav>
 
-  <section class="hero" id="home">
-    <h1>Welcome to Blanca & Mitch</h1>
-    <p>Personal care, mail services, and appointments made simple.</p>
-  </section>
+<!-- Hero Section -->
+<section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4">
+  <h1 class="text-6xl font-bold text-rose">Blanca & Mitch</h1>
+  <p class="mt-4 text-xl text-gold">Luxury Hair & Nail Salon</p>
+  <a href="#services" class="mt-8 px-6 py-3 border border-rose rounded hover:bg-rose hover:text-black transition">Book Now</a>
+</section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="card">
-      <strong>Mail Services</strong>
-      <p>Secure and fast mailing solutions for your needs.</p>
+<!-- Services Section -->
+<section id="services" class="py-20 px-6 md:px-20">
+  <h2 class="text-4xl font-bold text-center mb-12 text-rose">Our Services</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition">
+      <img src="images/haircut.jpg" alt="Haircut" class="w-full h-56 object-cover rounded mb-4">
+      <h3 class="text-2xl font-semibold">Haircut & Styling</h3>
+      <p class="mt-2 text-gray-300">Professional cuts and styling for every occasion.</p>
     </div>
-    <div class="card">
-      <strong>Home Services</strong>
-      <p>Luxury treatments and everyday support with a personal touch.</p>
+    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition">
+      <img src="images/nails.jpg" alt="Nails" class="w-full h-56 object-cover rounded mb-4">
+      <h3 class="text-2xl font-semibold">Manicure & Pedicure</h3>
+      <p class="mt-2 text-gray-300">Luxurious nail treatments in a relaxing environment.</p>
     </div>
-  </section>
+    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition">
+      <img src="images/coloring.jpg" alt="Hair Coloring" class="w-full h-56 object-cover rounded mb-4">
+      <h3 class="text-2xl font-semibold">Hair Coloring</h3>
+      <p class="mt-2 text-gray-300">Highlights, balayage, and vibrant color transformations.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="appointments">
-    <h2>Appointments</h2>
-    <p>Book your appointment with Blanca & Mitch today.</p>
-    <p><strong>Email:</strong> hello@blancamitch.com</p>
-    <p><strong>Phone:</strong> +52 1 XX XXX XXXX</p>
-  </section>
+<!-- Gallery Section -->
+<section id="gallery" class="py-20 px-6 md:px-20 bg-gray-900">
+  <h2 class="text-4xl font-bold text-center mb-12 text-rose">Gallery</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/gallery1.jpg" class="w-full h-72 object-cover rounded"></div>
+      <div class="swiper-slide"><img src="images/gallery2.jpg" class="w-full h-72 object-cover rounded"></div>
+      <div class="swiper-slide"><img src="images/gallery3.jpg" class="w-full h-72 object-cover rounded"></div>
+      <div class="swiper-slide"><img src="images/gallery4.jpg" class="w-full h-72 object-cover rounded"></div>
+      <div class="swiper-slide"><img src="images/gallery5.jpg" class="w-full h-72 object-cover rounded"></div>
+    </div>
+    <div class="swiper-button-next text-rose"></div>
+    <div class="swiper-button-prev text-rose"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
-  <section id="tasks">
-    <h2>Tasks</h2>
-    <p>Keep track of your to-dos and upcoming services with us.</p>
-  </section>
+<!-- About Section -->
+<section id="about" class="py-20 px-6 md:px-20">
+  <h2 class="text-4xl font-bold text-center mb-12 text-rose">About Us</h2>
+  <p class="max-w-3xl mx-auto text-center text-gray-300 text-lg">
+    Blanca & Mitch Salon is dedicated to luxury hair and nail services with a personalized touch. Our expert stylists create your perfect look in a comfortable, elegant environment. From stunning haircuts to relaxing mani-pedis, we aim to make every client feel pampered and beautiful.
+  </p>
+</section>
 
-  <footer>
-    © 2025 Blanca & Mitch. All rights reserved.
-  </footer>
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 md:px-20 bg-gray-900">
+  <h2 class="text-4xl font-bold text-center mb-12 text-rose">Contact Us</h2>
+  <div class="max-w-3xl mx-auto text-center space-y-4">
+    <p class="text-gray-300 text-lg">📍 Aconcagua 4, Lomas de Occipiacco</p>
+    <p class="text-gray-300 text-lg">📞 +52 55 1234 5678</p>
+    <p class="text-gray-300 text-lg">✉️ info@blancamitch.com</p>
+    <a href="https://wa.me/5215512345678" target="_blank" class="mt-4 inline-block px-6 py-3 border border-rose rounded hover:bg-rose hover:text-black transition">Book via WhatsApp</a>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+    pagination: { el: ".swiper-pagination", clickable: true },
+    breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+  });
+</script>
 
 </body>
 </html>
