@@ -21,6 +21,7 @@
   .text-gold { color: #FFD700; }
   .hover-rose:hover { color: #FF007F; }
   .hover-gold:hover { color: #FFD700; }
+  html { scroll-behavior: smooth; }
 </style>
 </head>
 <body class="bg-black text-white">
@@ -52,7 +53,7 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
     <!-- Haircut & Styling -->
-    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col">
+    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col shadow-lg hover:shadow-rose-500/50">
       <img src="images/haircut.jpg" alt="Haircut" class="w-full h-56 object-cover rounded mb-4">
       <h3 class="text-3xl font-semibold text-gold">Haircut & Styling</h3>
       <p class="mt-2 text-gray-300 flex-grow">Expert haircuts and elegant styling for every occasion.</p>
@@ -65,7 +66,7 @@
     </div>
 
     <!-- Manicure & Pedicure -->
-    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col">
+    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col shadow-lg hover:shadow-rose-500/50">
       <img src="images/nails.jpg" alt="Nails" class="w-full h-56 object-cover rounded mb-4">
       <h3 class="text-3xl font-semibold text-rose">Manicure & Pedicure</h3>
       <p class="mt-2 text-gray-300 flex-grow">Luxurious nail treatments for ultimate relaxation.</p>
@@ -78,7 +79,7 @@
     </div>
 
     <!-- Hair Coloring -->
-    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col">
+    <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col shadow-lg hover:shadow-rose-500/50">
       <img src="images/coloring.jpg" alt="Hair Coloring" class="w-full h-56 object-cover rounded mb-4">
       <h3 class="text-3xl font-semibold text-gold">Hair Coloring</h3>
       <p class="mt-2 text-gray-300 flex-grow">Balayage, highlights, and vibrant color transformations.</p>
@@ -189,6 +190,8 @@
     breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
   });
 </script>
-
+<footer class="text-center py-6 bg-black border-t border-gray-800 text-gray-400 text-sm">
+  © 2025 Blanca & Mitch Salon | Made with 💖 in Mexico City
+</footer>
 </body>
 </html>
