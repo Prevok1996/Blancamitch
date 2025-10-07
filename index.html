@@ -39,14 +39,19 @@
 </nav>
 
 <!-- Hero Section -->
-<section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-black bg-opacity-80">
-  <h1 class="text-6xl md:text-7xl font-bold text-rose mb-4" style="font-family: 'Great Vibes', cursive;">Blanca & Mitch</h1>
-  <p class="text-xl md:text-2xl text-gold mb-8">Luxury Hair & Nail Salon</p>
-  <a href="#services" class="px-8 py-4 border border-rose rounded hover:bg-rose hover:text-black transition font-semibold shadow-lg hover:scale-105">
-    Book Now
-  </a>
+<section id="home" 
+  class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-cover bg-center relative"
+  style="background-image: url('images/hero-bg.jpg');">
+  <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+  <div class="relative z-10">
+    <h1 class="text-6xl md:text-7xl font-bold text-rose mb-4" style="font-family: 'Great Vibes', cursive;">Blanca & Mitch</h1>
+    <p class="text-xl md:text-2xl text-gold mb-8">Luxury Hair & Nail Salon</p>
+    <a href="#services" class="px-8 py-4 border border-rose rounded hover:bg-rose hover:text-black transition font-semibold shadow-lg hover:scale-105">
+      Book Now
+    </a>
+  </div>
 </section>
-
+  
 <!-- Services Section -->
 <section id="services" class="py-12 md:py-16 px-6 md:px-20">
   <h2 class="text-5xl font-bold text-center mb-12 text-rose">Our Services</h2>
