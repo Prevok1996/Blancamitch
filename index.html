@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raíces & Brillo Salon</title>
 
+<!-- ✅ SEO & Metadata -->
+<meta name="description" content="Raíces & Brillo — Luxury Hair & Nail Salon in Naucalpan, offering expert haircuts, coloring, and spa-quality manicures. Book your appointment today.">
+<meta name="keywords" content="salon, hair, nails, Raíces & Brillo, Naucalpan, beauty, haircuts, balayage, manicure, pedicure, Mexico City">
+<meta name="author" content="Raíces & Brillo Salon">
+
+<!-- ✅ Favicon -->
+<link rel="icon" href="images/logo.png" type="image/png">
+
 <!-- Tailwind CSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,8 +34,8 @@
 </head>
 <body class="bg-black text-white">
 
-<!-- Navbar -->
-<nav class="fixed w-full bg-black bg-opacity-80 backdrop-blur-sm z-50 p-4 flex justify-between items-center">
+<!-- ✅ Navbar -->
+<nav class="fixed w-full bg-black bg-opacity-80 backdrop-blur-sm z-50 p-4 flex justify-between items-center transition-all duration-300">
   <div class="text-3xl text-rose" style="font-family: 'Great Vibes', cursive;">Raíces & Brillo</div>
   <ul class="flex space-x-6">
     <li><a href="#home" class="hover-rose">Home</a></li>
@@ -38,7 +46,7 @@
   </ul>
 </nav>
 
-<!-- Hero Section -->
+<!-- ✅ Hero Section -->
 <section id="home" 
   class="min-h-screen flex flex-col justify-center items-center text-center px-4 relative"
   style="
@@ -49,10 +57,8 @@
     background-attachment: scroll;
     background-color: black;
   ">
-  <!-- Overlay -->
   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
-  <!-- Content -->
   <div class="relative z-10">
     <h1 class="text-6xl md:text-7xl font-bold text-rose mb-4" style="font-family: 'Great Vibes', cursive;">Raíces & Brillo</h1>
     <p class="text-xl md:text-2xl text-gold mb-8">Luxury Hair & Nail Salon</p>
@@ -61,47 +67,47 @@
     </a>
   </div>
 </section>
-  
-<!-- Services Section -->
+
+<!-- ✅ Services Section -->
 <section id="services" class="py-12 md:py-16 px-6 md:px-20">
   <h2 class="text-5xl font-bold text-center mb-12 text-rose">Our Services</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
     <!-- Haircut & Styling -->
     <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col shadow-lg hover:shadow-rose-500/50">
-      <img src="images/haircut.jpg" alt="Haircut" class="w-full h-56 object-cover rounded mb-4">
+      <img loading="lazy" src="images/haircut.jpg" alt="Haircut" class="w-full h-56 object-cover rounded mb-4">
       <h3 class="text-3xl font-semibold text-gold">Haircut & Styling</h3>
       <p class="mt-2 text-gray-300 flex-grow">Expert haircuts and elegant styling for every occasion.</p>
       <a href="https://wa.me/5525641186?text=Hi%20Ra%C3%ADces%20%26%20Brillo%2C%20I%20want%20to%20book%20a%20Haircut%20%26%20Styling%20appointment!" 
          target="_blank"
          class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-pink-300 text-white rounded-full shadow-lg hover:scale-105 transition font-semibold justify-center">
-        <img src="images/hello-kitty.png" alt="Hello Kitty" class="w-5 h-5">
+        <img loading="lazy" src="images/hello-kitty.png" alt="Hello Kitty" class="w-5 h-5">
         Book via WhatsApp
       </a>
     </div>
 
     <!-- Manicure & Pedicure -->
     <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col shadow-lg hover:shadow-rose-500/50">
-      <img src="images/nails.jpg" alt="Nails" class="w-full h-56 object-cover rounded mb-4">
+      <img loading="lazy" src="images/nails.jpg" alt="Manicure and Pedicure" class="w-full h-56 object-cover rounded mb-4">
       <h3 class="text-3xl font-semibold text-rose">Manicure & Pedicure</h3>
       <p class="mt-2 text-gray-300 flex-grow">Luxurious nail treatments for ultimate relaxation.</p>
       <a href="https://wa.me/5525641186?text=Hi%20Ra%C3%ADces%20%26%20Brillo%2C%20I%20want%20to%20book%20a%20Manicure%20%26%20Pedicure%20appointment!" 
          target="_blank"
          class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-pink-300 text-white rounded-full shadow-lg hover:scale-105 transition font-semibold justify-center">
-        <img src="images/hello-kitty.png" alt="Hello Kitty" class="w-5 h-5">
+        <img loading="lazy" src="images/hello-kitty.png" alt="Hello Kitty" class="w-5 h-5">
         Book via WhatsApp
       </a>
     </div>
 
     <!-- Hair Coloring -->
     <div class="p-6 border border-gray-700 rounded hover:scale-105 transition relative flex flex-col shadow-lg hover:shadow-rose-500/50">
-      <img src="images/coloring.jpg" alt="Hair Coloring" class="w-full h-56 object-cover rounded mb-4">
+      <img loading="lazy" src="images/coloring.jpg" alt="Hair Coloring" class="w-full h-56 object-cover rounded mb-4">
       <h3 class="text-3xl font-semibold text-gold">Hair Coloring</h3>
       <p class="mt-2 text-gray-300 flex-grow">Balayage, highlights, and vibrant color transformations.</p>
       <a href="https://wa.me/5525641186?text=Hi%20Ra%C3%ADces%20%26%20Brillo%2C%20I%20want%20to%20book%20a%20Hair%20Coloring%20appointment!" 
          target="_blank"
          class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-pink-300 text-white rounded-full shadow-lg hover:scale-105 transition font-semibold justify-center">
-        <img src="images/hello-kitty.png" alt="Hello Kitty" class="w-5 h-5">
+        <img loading="lazy" src="images/hello-kitty.png" alt="Hello Kitty" class="w-5 h-5">
         Book via WhatsApp
       </a>
     </div>
@@ -109,16 +115,16 @@
   </div>
 </section>
 
-<!-- Gallery Section -->
+<!-- ✅ Gallery Section -->
 <section id="gallery" class="py-20 px-6 md:px-20 bg-gray-900">
   <h2 class="text-5xl font-bold text-center mb-12 text-rose">Gallery</h2>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/gallery1.jpg" class="w-full h-72 object-cover rounded"></div>
-      <div class="swiper-slide"><img src="images/gallery2.jpg" class="w-full h-72 object-cover rounded"></div>
-      <div class="swiper-slide"><img src="images/gallery3.jpg" class="w-full h-72 object-cover rounded"></div>
-      <div class="swiper-slide"><img src="images/gallery4.jpg" class="w-full h-72 object-cover rounded"></div>
-      <div class="swiper-slide"><img src="images/gallery5.jpg" class="w-full h-72 object-cover rounded"></div>
+      <div class="swiper-slide"><img loading="lazy" src="images/gallery1.jpg" class="w-full h-72 object-cover rounded" alt="Gallery 1"></div>
+      <div class="swiper-slide"><img loading="lazy" src="images/gallery2.jpg" class="w-full h-72 object-cover rounded" alt="Gallery 2"></div>
+      <div class="swiper-slide"><img loading="lazy" src="images/gallery3.jpg" class="w-full h-72 object-cover rounded" alt="Gallery 3"></div>
+      <div class="swiper-slide"><img loading="lazy" src="images/gallery4.jpg" class="w-full h-72 object-cover rounded" alt="Gallery 4"></div>
+      <div class="swiper-slide"><img loading="lazy" src="images/gallery5.jpg" class="w-full h-72 object-cover rounded" alt="Gallery 5"></div>
     </div>
     <div class="swiper-button-next text-rose"></div>
     <div class="swiper-button-prev text-rose"></div>
@@ -126,7 +132,7 @@
   </div>
 </section>
 
-<!-- About Section -->
+<!-- ✅ About Section -->
 <section id="about" class="py-20 px-6 md:px-20">
   <h2 class="text-5xl font-bold text-center mb-12 text-gold">About Us</h2>
   <p class="max-w-3xl mx-auto text-center text-gray-300 text-lg">
@@ -134,7 +140,7 @@
   </p>
 </section>
 
-<!-- Contact Section -->
+<!-- ✅ Contact Section -->
 <section id="contact" class="py-20 px-6 md:px-20 bg-gray-900">
   <h2 class="text-5xl font-bold text-center mb-12 text-rose">Contact Us</h2>
   
@@ -142,7 +148,6 @@
     
     <!-- Contact Info -->
     <div class="text-center md:text-left space-y-6">
-      <!-- Address -->
       <p class="text-gray-300 text-lg">
         📍 
         <a href="https://www.google.com/maps/search/?api=1&query=Aconcagua+4,+Lomas+de+Occipaco,+Naucalpan+de+Juárez,+Méx." 
@@ -152,7 +157,6 @@
         </a>
       </p>
       
-      <!-- Phone -->
       <p class="text-gray-300 text-lg">
         📞 
         <a href="tel:+525525641186" class="hover:underline text-gold font-semibold">
@@ -160,7 +164,6 @@
         </a>
       </p>
       
-      <!-- Email -->
       <p class="text-gray-300 text-lg">
         ✉️ 
         <a href="mailto:myuniksoul@hotmail.com" class="hover:underline text-rose font-semibold">
@@ -168,7 +171,6 @@
         </a>
       </p>
       
-      <!-- WhatsApp Booking -->
       <a href="https://wa.me/5525641186?text=Hi%20Ra%C3%ADces%20%26%20Brillo%2C%20I%20want%20to%20book%20an%20appointment." 
          target="_blank" 
          class="mt-6 inline-block px-8 py-4 border border-rose rounded hover:bg-rose hover:text-black transition font-semibold">
@@ -176,7 +178,7 @@
       </a>
     </div>
     
-    <!-- Embedded Google Map -->
+    <!-- Map -->
     <div class="rounded overflow-hidden shadow-lg">
       <iframe
         src="https://www.google.com/maps?q=Aconcagua+4,+Lomas+de+Occipaco,+Naucalpan+de+Juárez,+Méx.&output=embed"
@@ -191,7 +193,7 @@
   </div>
 </section>
 
-<!-- Swiper JS -->
+<!-- ✅ Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   var swiper = new Swiper(".mySwiper", {
@@ -202,7 +204,25 @@
     pagination: { el: ".swiper-pagination", clickable: true },
     breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
   });
+
+  // ✅ Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+      nav.classList.add('bg-opacity-90', 'shadow-lg');
+    } else {
+      nav.classList.remove('bg-opacity-90', 'shadow-lg');
+    }
+  });
 </script>
+
+<!-- ✅ Floating WhatsApp Button -->
+<a href="https://wa.me/5525641186?text=Hi%20Ra%C3%ADces%20%26%20Brillo!" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition">
+  <img src="images/whatsapp-icon.png" alt="WhatsApp Chat" class="w-7 h-7">
+</a>
 
 <footer class="text-center py-6 bg-black border-t border-gray-800 text-gray-400 text-sm">
   © 2025 Raíces & Brillo | Made with 💖 in Mexico City
